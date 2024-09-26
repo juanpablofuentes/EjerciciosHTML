@@ -1,0 +1,15 @@
+# Archivos de compilación
+*.class
+
+# Directorios de construcción
+/build/
+/target/
+
+# Dependencias
+/.mvn/
+/.idea/
+
+# Otros
+*.log
+*.jar
+*.war

@@ -1,0 +1,46 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: baile 8s ease-in 2s 3 alternate;
+}
+
+@keyframes baile {
+    25% {
+        transform:translate(400px,0px);
+    }
+    50% {
+        transform: rotate(90deg) translate(400px,0px);
+    }
+    75% {
+        transform: translate(600px,0px);
+    }
+}
+
+h1{
+    width:230px;
+    margin: auto;
+}
+
+.wavy-6 {
+    padding-bottom:10px;
+    background:
+       radial-gradient(50% 100% at 50% -5px            ,#0000 calc(100% - 4px), currentColor calc(100% - 3px) calc(100% - 1px),#0000) 0    100%,
+       radial-gradient(50% 100% at 50% calc(100% + 5px),#0000 calc(100% - 4px), currentColor calc(100% - 3px) calc(100% - 1px),#0000) 10px calc(100% - 8px);
+    background-size:20px 10px;
+    background-repeat:repeat-x;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) top            /100% calc(100% - 13px),
+      linear-gradient(#fff 0 0) var(--p,-40px) 100%/40px 13px;
+    -webkit-mask-repeat:no-repeat;
+    transition:0s;
+  }
+  .wavy-6:hover {
+    --p:calc(100% + 40px);
+    transition:0.8s linear;
+   }
+
+   li:last-child{
+    color:red;
+    animation: baile 8s ease-in 2s 3 alternate;
+   }

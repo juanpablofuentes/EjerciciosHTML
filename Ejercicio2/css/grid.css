@@ -1,0 +1,28 @@
+.elemento{
+    border: solid 2px gray;
+    padding: 1em;
+    background-color: aquamarine;
+}
+#contenedor{
+    display: grid;
+     grid-template-columns: 150px 2fr 1fr; /* unidades relativas al espacio libre */
+     grid-template-rows: 1fr repeat(2,2fr);
+     grid-template-areas:  'header header header header'
+                           'side content content content'
+                           'side content content content'
+                           'side content content content'
+                           'footer footer footer footer'
+                           ;
+}
+#primero{
+    grid-area: header;
+}
+#side{
+    grid-area: side;
+}
+#content{
+    grid-area: content;
+}
+#footer{
+    grid-area: footer;
+}

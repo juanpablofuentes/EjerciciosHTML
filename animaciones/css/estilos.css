@@ -1,0 +1,62 @@
+div[id^='tr']{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+/* Estilos de la cabecera */
+
+#transicion1{
+    transition: width 2s, transform 3s,background-color 4s, color 3s;
+    animation-name: mi_animacion;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+#transicion1:hover{
+    transform: rotate(45deg) translateY(200px);
+    width:300px;
+    background-color: darkgreen;
+    color:white;
+}
+
+#transicion2{
+    background-color: blue;
+    transition: transform 3s,background-color 4s;
+    animation-name: mi_animacion;
+    animation-duration: 8s;
+}
+
+#transicion2:hover{
+    transform: skewX(45deg);
+    background-color: rgb(255, 225, 58);
+}
+
+#transicion3{
+    background-color: rgb(244, 35, 198);
+    transition: transform 3s,background-color 4s;
+}
+
+#transicion3:hover{
+    transform: rotateX(360deg);
+    background-color: #26e53d;
+}
+
+#transicion4{
+    background-color: rgb(75, 234, 255);
+    transition: transform 3s,background-color 4s;
+}
+
+#transicion4:hover{
+    transform: matrix(2,.3,.4,3,200,200);
+    background-color: #f4ff7a;
+}
+
+/* animaciones */
+
+@keyframes mi_animacion{
+    0%   {background-color: red;width: 100%;}
+    20%  {background-color: red;transform:rotate(45deg)}
+    80%  {background-color: red;transform:translateX(calc(100%-300px)) scale(2,3);}
+    100% {background-color: red;transform: rotate(-45deg) translateX(-300px);}
+  }

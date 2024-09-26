@@ -1,0 +1,52 @@
+*{
+    font-family:Verdana,serif;
+    }
+    header,aside,section,footer{
+    padding:1rem;
+    }
+    header{
+    height:10rem;
+    background-color:lightgreen;
+    }
+    aside{
+    width:15rem;
+    height:40rem;
+    background-color:#fae596;
+    float:left;
+    }
+    section{
+    margin-left:17rem;
+    background-color:#BBBBBB;
+    min-height:40rem;
+    padding:1rem 10rem;
+    }
+    footer{
+    height:3rem;
+    background-color:black;
+    color:white;
+    }
+     
+    header h1{
+    font-family: 'Carter One', cursive;
+    font-size:5rem;
+    margin:0;
+    }
+    aside ul{
+    list-style-type:none;
+    padding:0;
+    }
+     
+    aside ul li {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color:PowderBlue ;
+    margin-top:.5rem;
+    }
+    aside ul li:hover {
+    background-color:yellowgreen ;
+     
+    }
+    aside ul li a{
+    text-decoration:none;
+    font-size:1.5em;
+    }

@@ -1,0 +1,20 @@
+html{
+    --gris:blue; /* las variables se definen con dos guiones: -- */
+    --blanco:yellow;
+    --tamanyo:2em;
+}
+h1{
+    color:var(--gris);
+}
+#anuncio{
+    --blanco:white; /*sobreescribiendo la variable blanco */
+    color:var(--blanco);
+    background-color:   var(--gris);
+    font-size: var(--tamanyo);
+    width: calc(100% / 3);
+    margin: auto;
+}
+ul{
+    background-color: var(--gris);
+    color: var(--blanco);
+}
